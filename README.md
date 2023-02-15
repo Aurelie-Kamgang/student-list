@@ -23,6 +23,8 @@ Run the container with the command:
 
 `docker run -dit --name student_list_1 -p 82:5000 -v ${PWD}/student_age.json:/data/student_age.json student_list:v1`
 
+`sudo docker run -d --name website -p 81:80 -e USERNAME='toto' -e PASSWORD='python'  -v ${PWD}/website:/var/www/html --add-host ec2-34-229-72-16.compute-1.amazonaws.com:172.17.0.3 php:apache`
+
 Check containers: `docker ps -a`
 
 ![](https://lh4.googleusercontent.com/XDlLyTh-KUm1931FivyPjNceNEWff5T1BHboni0kwvF8sCMKLix_gaFBj_zpGJQw9wcKO1NZAY2JFOP3vWN17FfbgMPS4iKUx_h2ynVW85INO5umKQUNz0M19YN7DdEhINd3mDXrgc2MK6H2ZVWeh3d4slvgOlgOELSR3ihlV57U21MGYu3A01e8Pg)
